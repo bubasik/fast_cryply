@@ -13,11 +13,11 @@ REM create start bat file
 Echo C:\cryply\cryply-qt-v1.1.0.0.exe -datadir=C:\cryply\data > C:\cryply\cryply.bat
 
 REM download archive blockchain
-wget.exe -P c:\cryply -nc http://yenten-pool.ml/blocks_17_08_2018.zip
+wget.exe -P c:\cryply -nc http://yenten-pool.ml/blocks_cryply_last.zip
 
 
 REM unzip blockchain
-unzip.exe c:\cryply\blocks_17_08_2018.zip -d c:\cryply\data
+unzip.exe c:\cryply\blocks_cryply_last.zip -d c:\cryply\data
 
 REM move folders
 move C:\cryply\data\root\blocks\blocks c:\cryply\data
